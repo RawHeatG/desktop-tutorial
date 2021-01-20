@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap');
 :root{
     --primary-color: #3f3d56;
 ;
@@ -10,7 +10,7 @@
 body{
     color:#afff2c;
     background-image: linear-gradient(to bottom right,#00c6ff,#0072ff);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
     margin: 0rem;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -93,6 +93,11 @@ a{
     display: block;
     margin: auto;
 }
+.dummy-blog-img {
+    max-width: 500px;
+    display: block;
+    margin: auto;
+}
 
 .hero-heading {
     color: var(--dark-gray);
@@ -157,4 +162,8 @@ a{
     font-size: 1.5rem;
     padding: 0rem 2rem 1rem 2rem;
     
+}
+
+.dummy-blog{
+    font-size: 1.2rem;
 }
