@@ -1,19 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,700&display=swap');
 
 :root{
-    --primary-color: #A5FF63;
-    --secondary-color: #FA60A6;
-    --dark-gray: #6B7280;
-    --off-white: #F3F4F6;
+    --primary-color: #3f3d56;
+;
+    --green:#afff2c;
+    --dark-gray: #3f3d56;
+    --off-white: #ECFEFF;
 }
 body{
-    color:#FA60A6;
-
+    color:#afff2c;
+    background-image: linear-gradient(to bottom right,#00c6ff,#0072ff);
     font-family: 'Ubuntu', sans-serif;
+    margin: 0rem;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 hr{
     margin: 1rem 0rem;
+}
+
+a{
+    color: var(--off-white);
+    text-decoration: underline;
+}
+.left-align{
+    text-align: left;
 }
 
 
@@ -32,15 +44,15 @@ hr{
     padding: 0.5rem 1rem;
 }
 .link-primary {
-    background-color: var(--primary-color);
+    background-color: var(--green);
     border-radius: 0.5rem;
-    color: var(--secondary-color);
+    color: var(--dark-gray);
 }
 
 .link-secondary {
-    color: var(--secondary-color);
+    background-color: var(--off-white);
     border-radius: 0.5rem;
-    border: 2px solid var(--primary-color);
+    color: var(--dark-gray);
 }
 
 .list-non-bullets{
@@ -55,11 +67,11 @@ hr{
 .navigation{
     background-color: var(--primary-color);
     border-bottom-left-radius: 0.5rem;
-    color: var(--secondary-color);
+    color: var(--green);
 }
 
 .navigation .link{
-    color: var(--secondary-color);
+    color: var(--green);
 }
 .nav-pills{
     text-align: right;
@@ -68,8 +80,8 @@ hr{
 
 .nav-brand{
     font-weight: bold;
-    font-size: 1.2rem;
-    padding: 0rem 0.5rem;
+    font-size: 2.5rem;
+    padding: 0.3rem 1rem;
 }
 
 .link-active {
@@ -86,39 +98,63 @@ hr{
     color: var(--dark-gray);
     text-align: center;
 }
-.inverted-color {
-    color: var(--primary-color);
+.inverted-color-off-white {
+    color: var(--off-white);
+} 
+.inverted-color-green{
+    color: var(--green)
 }
+
 
 .section {
     padding: 2rem;
+    margin: 2rem 20%;
+    max-width: 60%;
+    text-align: center;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+    0 5px 15px 0 rgba(0,0,0,0.08);
+    background-color: #3f3d56;
+    border-radius: 2rem 0.5rem 0.5rem 2rem;
+  
+    border-left: 0 solid var(--off-white);
+    transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
 }
+
+.section:hover {
+    padding-left: 0.5rem;
+    border-left: 0.5rem solid var(--green);
+  }
+
 .section h1 {
     text-align: center;
+    
 }
 
 .off-white {
-    background-color: var(--off-white);
-    border-radius: 0.5rem;
+    background-color: #3f3d56;
+    padding: 2rem 2rem;
 }
 
 .footer{
     background-color: var(--primary-color);
-    border-radius: 0.5rem;
-    padding: 1rem 2rem;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    padding: 0.5rem 2rem;
     text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 .footer ul {
     padding-inline-start: 0px;
+    margin: 0rem  ;
 }
 .footer .link {
     padding: 0rem 1rem;
 }
-.footer ul {
-    padding-inline-start: 0px;
-}
 
 .footer-header{
     font-weight: bold;
-    sfont-size: 1.5rem;
+    font-size: 1.5rem;
+    padding: 0rem 2rem 1rem 2rem;
+    
 }
